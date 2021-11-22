@@ -1,0 +1,169 @@
+:root{
+    /* Primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    --Very-dark-blue: hsl(217, 54%, 11%);
+    --Very-dark-blue2: hsl(216, 50%, 16%);
+    --Very-dark-blue3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html , body{
+    height: 100%;
+}
+
+body{
+    /* Centrar el bloque central */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--Very-dark-blue);
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Bloque central / flex */
+.car{
+    max-width: 37rem;
+    width: 90%;
+    height: auto;
+
+    background-color: var(--Very-dark-blue2);
+    border-radius: 1rem;
+    box-shadow: 0px 22px 10px 6px var(--Very-dark-blue2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Primer bloque flex*/
+.car__img{
+    background-image: url(images/image-equilibrium.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    width: 33rem;
+    height: 33rem;
+
+    border-radius: 1rem;
+    margin: 2.5rem 1rem .5rem 1rem;
+}
+
+/* Segund bloque flex */
+.car__description{
+    width: 33rem;
+    height: auto;
+    padding: 0rem 0 1rem 0;
+}
+
+.title{
+    color: var(--White);
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.parrafo{
+    color: var(--Soft-blue);
+    font-size: 1.7rem;
+}
+
+.day{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.day__eth{
+    display: flex;
+}
+.day__eth p{
+    color: var(--Cyan);
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.day__eth::before{
+    content: '';
+    display: inline-block;
+    background-image: url(images/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    background-size: 1.2rem;
+    background-position: bottom;
+    width: 1.875rem;
+    height: 3.125rem;
+    margin-right: .5rem;
+}
+
+.day__time{
+    display: flex;
+}
+
+.day .day__time p{
+    color: var(--Soft-blue);
+    text-transform: lowercase;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.day__time::before{
+    content: '';
+    display: inline-block;
+    background-image: url(images/icon-clock.svg);
+    background-repeat: no-repeat;
+    background-size: 1.8rem;
+    background-position: bottom;
+    width: 1.875rem;
+    height: 3.125rem;
+    margin-right: .5rem;
+}
+
+.hr{
+    height: 1px;
+    max-width: 33rem;
+    width: 100%;
+    background-color: var(--Soft-blue);
+}
+
+/* Tercer bloque flex foo */
+.car__foo{
+    display: flex;
+    align-items: center;
+    width: 33rem;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+}
+
+.car__foo::before{
+    content: '';
+    display: block;
+    background-image: url(images/image-avatar.png);
+    background-repeat: no-repeat;
+    background-size: 4rem;
+    background-position: center;
+    width:4rem;
+    height:4rem;
+    border: 1px solid var(--White);
+    border-radius: 100%;
+    margin-right: 1.2rem;
+    
+}
+
+.car__foo p{
+    color: var(--Soft-blue);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.foo__name{
+    color: var(--White);
+}
